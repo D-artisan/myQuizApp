@@ -14,7 +14,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button answer1, answer2, answer3, answer4;
+    Button answer1, answer2, answer3;
 
     TextView score, question;
 
@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         answer1 = (Button) findViewById(R.id.answer1);
         answer2 = (Button) findViewById(R.id.answer2);
         answer3 = (Button) findViewById(R.id.answer3);
-        answer4 = (Button) findViewById(R.id.answer4);
 
         score = (TextView) findViewById(R.id.scoreView);
         question = (TextView) findViewById(R.id.questionView);
@@ -102,23 +101,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Button listener to button three ends here ....
 
-        //Button listener to button four begins here ...
-        answer4.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                if(answer4.getText() == mAnswer){
-                    mScore++;
-                    score.setText("Score: "+ mScore);
-                    updateQuestion(r.nextInt(mQuestionsLength));
-                }
-                else{
-                    gameOver();
-                }
-
-            }
-        });
-
-        //Button listener to button four ends here ....
 
     }
 
@@ -128,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
         answer1.setText(mQuestions.getChoice1(number));
         answer2.setText(mQuestions.getChoice2(number));
         answer3.setText(mQuestions.getChoice3(number));
-        answer4.setText(mQuestions.getChoice4(number));
 
         mAnswer = mQuestions.getCorrectAnswer(number);
 

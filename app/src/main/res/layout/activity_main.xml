@@ -42,7 +42,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="151dp"
+        android:layout_marginBottom="142dp"
         android:text="Button"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="459dp" />

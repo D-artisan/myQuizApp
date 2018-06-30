@@ -4,23 +4,19 @@ public class Questions {
 
     public String mQuestions[] = {
             "What is the capital City of Ghana",
-            "Who was the first President of Ghana",
             "In which year did Ghana attain independence",
-            "Which country happens to be the Colonial Masters of Ghana",
             "Ghana was originally knowns as the ______________"
     };
 
 
     private String mChoice[][] = {
             {"Kumasi", "Sunyani", "Greater Accra"},
-            {"Dr. Limann", "Dr. Kwame Nkrumah", "Nana Akuffo-Addo"},
             {"1909", "1958", "1957", "2001"},
-            {"Spain", "Great Britain", "Peru"},
             {"Silver Coast", "Bronze Coast", "Gold Coast"}
 
     };
 
-    private String mCorrectAnswer[] = {"Greater Accra", "Dr. Kwame Nkrumah", "1957", "Great Britain", "Gold Coast"};
+    private String mCorrectAnswer[] = {"Greater Accra","1957", "Gold Coast"};
 
 
     /**
@@ -59,26 +55,6 @@ public class Questions {
 
     public String getChoice3(int a) {
         String choice = mChoice[a][2];
-        return choice;
-    }
-
-    /**
-     * @param a
-     * @return get fourth option or choice in an array from the answerChoices array
-     */
-
-    public String getChoice4(int a) {
-        String choice = mChoice[a][3];
-        return choice;
-    }
-
-    /**
-     * @param a
-     * @return get fifth option or choice in an array from the answerChoices array
-     */
-
-    public String getChoice5(int a) {
-        String choice = mChoice[a][4];
         return choice;
     }
 
