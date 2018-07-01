@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">myQuizApp</string>
+    <string name="my_score_view">TextView</string>
+    <string name="my_question_view">Questions</string>
+    <string name="first_button">Button</string>
+    <string name="second_button">Button</string>
+    <string name="third_button">Button</string>
 </resources>
