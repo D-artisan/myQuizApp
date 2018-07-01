@@ -3,15 +3,15 @@ package com.example.danny.myquizapp;
 public class Questions {
 
     public String mQuestions[] = {
-            "What is the capital City of Ghana",
-            "In which year did Ghana attain independence",
-            "Ghana was originally knowns as the ______________"
+            "What is the capital City of Ghana?",
+            "In which year did Ghana attain independence?",
+            "Ghana was originally known as the ______________"
     };
 
 
     private String mChoice[][] = {
-            {"Kumasi", "Sunyani", "Greater Accra"},
-            {"1909", "1958", "1957", "2001"},
+            { "Greater Accra","Kumasi","Sunyani"},
+            {"1909","1957", "1958"},
             {"Silver Coast", "Bronze Coast", "Gold Coast"}
 
     };
